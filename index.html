@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>YAY! It’s BOGO</h1>
+
+        <div class="cards">
+            <div class="card selected" data-price="10.00" onclick="expandCard(this)">
+                <div>
+                    <input type="radio" name="unit" checked />
+                </div>
+
+                <div class="unit-des">
+                    <div class="unit-info">
+                        <span class="unit">1 Unit</span>
+                        <span class="tag">10% Off</span>
+                    </div>
+
+                    <div class="price">
+                        <strong>$10.00 USD</strong>
+                        <del>$24.00 USD</del>
+                    </div>
+                </div>
+
+
+                <div class="descriptions">
+                    <div>Standard Price</div>
+                    <div></div>
+                </div>
+
+              
+                    <div class="options hidden">
+                        <div class="sc-options">
+                            <div class="s-option">
+                                <span>Size</span>
+                            </div>
+                            <div class="c-option">
+                                <span>Color</span>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <label>#1</label>
+                            <select class="selects">
+                                <option>XL</option>
+                                <option>L</option>
+                                <option>S</option>
+                                <option>M</option>
+                            </select>
+                            <select class="selects">
+                                <option>Pink</option>
+                                <option>Black</option>
+                                <option>Blue</option>
+                                <option>Green</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>#2</label>
+                            <select class="selects">
+                                <option>XL</option>
+                                <option>L</option>
+                                <option>S</option>
+                                <option>M</option>
+                            </select>
+                            <select class="selects">
+                                <option>Red</option>
+                                <option>Black</option>
+                                <option>Blue</option>
+                                <option>Green</option>
+                            </select>
+                        </div>
+                    </div>
+            
+
+            </div>
+
+            <div class="card" data-price="18.00" onclick="expandCard(this)">
+                <input type="radio" name="unit" />
+                <div class="label">MOST POPULAR</div>
+
+                <div class="unit-des">
+                    <div class="unit-info">
+                        <span class="unit">2 Unit</span>
+                        <span class="tag">20% Off</span>
+                    </div>
+                    <div class="price">
+                        <strong>$18.00 USD</strong>
+                        <del>$24.00 USD</del>
+                    </div>
+                </div>
+
+                <div class="options hidden">
+
+                    <div class="sc-options">
+                        <div class="s-option">
+                            <span>Size</span>
+                        </div>
+                        <div class="c-option">
+                            <span>Color</span>
+                        </div>
+                    </div>
+
+                    <div class="option">
+                        <label>#1</label>
+                        <select class="selects">
+                            <option>XL</option>
+                            <option>L</option>
+                            <option>S</option>
+                            <option>M</option>
+                        </select>
+                        <select class="selects">
+                            <option>Blue</option>
+                            <option>Black</option>
+                            <option>Yellow</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label>#2</label>
+                        <select class="selects">
+                            <option>XL</option>
+                            <option>L</option>
+                            <option>S</option>
+                            <option>M</option>
+                        </select>
+                        <select class="selects">
+                            <option>Green</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-price="24.00" onclick="expandCard(this)">
+                <input type="radio" name="unit" />
+
+                <div class="unit-des">
+                    <div class="unit-info">
+                        <span class="unit">3 Unit</span>
+                        <span class="tag">30% Off</span>
+                    </div>
+                    <div class="price">
+                        <strong>$24.00 USD</strong>
+                        <del>$24.00 USD</del>
+                    </div>
+                </div>
+
+                <div class="options hidden">
+
+                    <div class="sc-options">
+                        <div class="s-option">
+                            <span>Size</span>
+                        </div>
+                        <div class="c-option">
+                            <span>Color</span>
+                        </div>
+                    </div>
+
+                    <div class="option">
+                        <label>#1</label>
+                        <select class="selects">
+                            <option>XL</option>
+                            <option>L</option>
+                            <option>S</option>
+                            <option>M</option>
+                        </select>
+                        <select class="selects">
+                            <option>Pink</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <label>#2</label>
+                        <select class="selects">
+                            <option>XL</option>
+                            <option>L</option>
+                            <option>S</option>
+                            <option>M</option>
+                        </select>
+                        <select class="selects">
+                            <option>Yellow</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Free Delivery</p>
+            <p class="total">Total: $<span id="total">10.00</span> USD</p>
+        </div>
+
+        <button class="add-to-cart">+ Add to Cart</button>
+        <p class="powered">Powered by Pumper</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
