@@ -129,16 +129,17 @@ input[type="radio"] {
 }
 
 .sc-options {
-  display: flex;
+      display: flex;
+      column-gap: 57px;
+      justify-content: center;
+      width: 79%;
 }
 
 .s-option {
-  margin-left: 23%;
   font-size: small;
 }
 
 .c-option {
-  margin-left: 10%;
   font-size: small;
 }
 
@@ -190,14 +191,6 @@ input[type="radio"] {
     align-items: flex-start;
   }
 
-  .sc-options {
-    justify-content: flex-start;
-  }
-
-  .c-option {
-    margin-left: 18%;
-  }
-
   input[type="radio"] {
     position: absolute;
     top: 36%;
@@ -206,7 +199,8 @@ input[type="radio"] {
 }
 
 @media (max-width: 400px) {
-.s-option {
-    margin-left: 31%;
+  .sc-options {
+    column-gap: 65px;
+    width: 100%;
 }
 }
