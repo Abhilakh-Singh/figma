@@ -190,11 +190,19 @@ h1 {
     flex-direction: row;
     align-items: flex-start;
   }
+
+  .sc-options {
+    width: 83%;
+  }
 }
 
 @media (max-width: 400px) {
   .sc-options {
     column-gap: 65px;
     width: 100%;
+  }
+
+  .sc-options {
+    width: 95%;
   }
 }
