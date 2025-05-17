@@ -53,14 +53,14 @@ h1 {
 }
 
 input[type="radio"] {
-     position: absolute;
-    top: 30px;
-    left: 45px;
+  position: absolute;
+  top: 30px;
+  left: 45px;
 }
 
-.unit-des{
-    display: flex;
-    justify-content: space-around;
+.unit-des {
+  display: flex;
+  justify-content: space-around;
 
 }
 
@@ -83,17 +83,17 @@ input[type="radio"] {
   font-size: 12px;
 }
 
-.descriptions{
-    display: flex;
-    justify-content: space-around;
-    margin-right: 17%;
+.descriptions {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 17%;
 }
 
 .price {
-    margin-top: 10px;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 10px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .price del {
@@ -127,22 +127,27 @@ input[type="radio"] {
   align-items: center;
   margin-left: 15%;
 }
-.sc-options{
-    display: flex;
+
+.sc-options {
+  display: flex;
 }
-.s-option{
-    margin-left: 23%;
-    font-size: small;
+
+.s-option {
+  margin-left: 23%;
+  font-size: small;
 }
-.c-option{
-    margin-left: 10%;
-    font-size: small;
+
+.c-option {
+  margin-left: 10%;
+  font-size: small;
 }
-.selects{
-    width: 80px;
-    font-size: small;
-    padding: 3px;
+
+.selects {
+  width: 80px;
+  font-size: small;
+  padding: 3px;
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -184,18 +189,24 @@ input[type="radio"] {
     flex-direction: row;
     align-items: flex-start;
   }
-  .s-option {
-    margin-left: 110px;
-}
-.c-option {
-    margin-left: 24px;
-}
-input[type="radio"] {
+
+  .sc-options {
+    justify-content: flex-start;
+  }
+
+  .c-option {
+    margin-left: 18%;
+  }
+
+  input[type="radio"] {
     position: absolute;
     top: 36%;
     left: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+.s-option {
+    margin-left: 31%;
 }
 }
-
-
-
