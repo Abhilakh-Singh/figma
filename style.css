@@ -139,7 +139,7 @@ input[type="radio"] {
     font-size: small;
 }
 .selects{
-    width: 17%;
+    width: 80px;
     font-size: small;
     padding: 3px;
 }
@@ -181,9 +181,20 @@ input[type="radio"] {
 
 @media (max-width: 500px) {
   .option {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
+  .s-option {
+    margin-left: 110px;
+}
+.c-option {
+    margin-left: 24px;
+}
+input[type="radio"] {
+    position: absolute;
+    top: 36%;
+    left: 5%;
+}
 }
 
 
