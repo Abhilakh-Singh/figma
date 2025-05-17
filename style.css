@@ -52,12 +52,6 @@ h1 {
   box-shadow: 0 0 10px #fbd1e2;
 }
 
-input[type="radio"] {
-  position: absolute;
-  top: 30px;
-  left: 45px;
-}
-
 .unit-des {
   display: flex;
   justify-content: space-around;
@@ -86,7 +80,7 @@ input[type="radio"] {
 .descriptions {
   display: flex;
   justify-content: space-around;
-  margin-right: 17%;
+  margin-right: 9%;
 }
 
 .price {
@@ -125,14 +119,14 @@ input[type="radio"] {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  margin-left: 15%;
+  margin-left: 17%;
 }
 
 .sc-options {
-      display: flex;
-      column-gap: 57px;
-      justify-content: center;
-      width: 79%;
+  display: flex;
+  column-gap: 57px;
+  justify-content: center;
+  width: 79%;
 }
 
 .s-option {
@@ -141,6 +135,12 @@ input[type="radio"] {
 
 .c-option {
   font-size: small;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .selects {
@@ -190,17 +190,11 @@ input[type="radio"] {
     flex-direction: row;
     align-items: flex-start;
   }
-
-  input[type="radio"] {
-    position: absolute;
-    top: 36%;
-    left: 5%;
-  }
 }
 
 @media (max-width: 400px) {
   .sc-options {
     column-gap: 65px;
     width: 100%;
-}
+  }
 }
